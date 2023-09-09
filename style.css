@@ -1,31 +1,30 @@
-/* *{
-   border: solid 1px red;
-} */
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-size:  500%;
+  background-size: 200%;
   background-image: linear-gradient(
-        75deg,
-        rgb(0, 0, 0) 0%,
-        rgb(75, 69, 158) 25%,
-        rgb(134, 58, 58) 50%,
-        rgb(44, 43, 100) 75%,
-        rgb(35, 29, 54) 100%
+    75deg,
+    rgb(0, 0, 0) 0%,
+    rgb(75, 69, 158) 25%,
+    rgb(134, 58, 58) 50%,
+    rgb(44, 43, 100) 75%,
+    rgb(35, 29, 54) 100%
   );
   animation: AnimateBG 60s ease infinite;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /*Hide scrollbar*/
+  scrollbar-width: none; /*Hide scrollbar*/
 }
 
-.navMenu {  /* Put the navMenu in the right spot on the screen */
+body::-webkit-scrollbar {
+  display: none; /*Hide scrollbar*/
+}
+
+.navMenu {
+  /* Put the navMenu in the right spot on the screen */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -34,24 +33,34 @@ body {
   margin-top: 1%;
 }
 
-.navMenu a { /* Icons: Home,Work,about etc.. */
-  color:bisque;
-  text-decoration:none;
+.navMenu a {
+  /* Icons: Home,about,contact */
+  display: flex;
+  justify-content: center;
+  color: bisque;
+  text-decoration: none;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 500;
   width: 200px;
 }
 
-.navMenu a:hover { /* The animation for the Icons in navMenu */
+.navMenu a:hover {
+  /* The animation for the Icons in navMenu */
   color: #979526;
   transition: 0.8s;
   transform: scale(1.1);
 }
 
-header h1,article h2,#foundatinalTitle {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(250, 250, 250,0.9);
+header h1,
+article h2,
+.gifs-titles,
+.navMenu,
+#foundatinalTitle,
+#headParagraf {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(250, 250, 250, 0.9);
 }
 
 header {
@@ -62,6 +71,7 @@ header {
 header > h1 {
   font-size: 100px;
   margin-bottom: 10px;
+  letter-spacing: 5px;
 }
 
 #headTitle {
@@ -77,6 +87,7 @@ header > h1 {
 #titleIntro {
   letter-spacing: 2px;
   font-size: 3.5em;
+  margin-bottom: 0.5em;
 }
 
 article {
@@ -87,24 +98,32 @@ article {
 }
 
 #introImage {
-  max-width: 100%;
-    height: auto;
+  max-width: 90%;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
+  height: auto;
 }
 
 .article_p {
   width: 50%;
   margin: 0;
-  display: flex;
   margin-bottom: 10px;
-  text-align: left;
+  text-align: justify;
   line-height: 1.6;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
-h1,h2,p {
-  color: rgb(250, 250, 250,0.9);
+h1,
+h2,
+p {
+  color: rgb(250, 250, 250, 0.9);
 }
-article h2 p{
+
+aside h2 {
+  display: flex;
+  justify-content: center;
+}
+
+article h2 p {
   padding-bottom: 20px;
 }
 
@@ -115,25 +134,48 @@ section {
 }
 
 .gifs {
-  width: 1fr;
+  border: solid black 2px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
+  width: 400px;
   height: 200px;
 }
 
-aside h2  {
+.gifs-titles {
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+
+footer {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#footerSpacing {
+  padding-right: 3px;
 }
 
 @keyframes AnimateBG {
-  0%{background-position:50% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:50% 50%}
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   article {
     margin-left: 0;
     margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   .gif-section {
     display: flex;
@@ -141,15 +183,8 @@ aside h2  {
     justify-content: center;
     gap: 10px;
   }
-  article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
   #introImage {
     max-width: 100%;
-      height: auto;
+    height: auto;
   }
 }
