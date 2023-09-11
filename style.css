@@ -192,5 +192,19 @@ footer {
 @media only scripts and (max-width: 360px) {
   body {
     font-size: 14px;
+    line-height: 1.5;
   }
+  .gif-section aside {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .navMenu a {
+    padding: 10px 15px;
+  }
+
+  .gif-section aside {
+    margin: 10px 0;
+
+}
 }
