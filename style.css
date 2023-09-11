@@ -174,7 +174,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  header > h1,aside > h2 {
+  header > h1, aside > h2, #foundationalTitle{
     font-size: 2em; /* Adjust the font size as needed */
   }
   main {
@@ -187,12 +187,6 @@ footer {
   #introImage {
     height: 10vmax;
     width: 20vmax;
-  }
-  #headTitle, #titleIntro, #foundationalAside {
-    width: 90%;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
   }
   .article_p {
     font-size: 15px;
