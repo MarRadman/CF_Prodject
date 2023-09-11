@@ -188,3 +188,9 @@ footer {
     height: 90%;
   }
 }
+
+@media only scripts and (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+}
