@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
 
 .navMenu a:hover {
   /* The animation for the Icons in navMenu */
-  color: #979526;
+  color: hsl(59, 60%, 37%);
   transition: 0.8s;
   transform: scale(1.1);
 }
