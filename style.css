@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: auto;
   background-size: 100%;
   background-image: linear-gradient(
     75deg,
@@ -55,6 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
 }
 
 header h1,
@@ -77,6 +79,7 @@ p {
 header {
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 
 header > h1 {
@@ -103,7 +106,7 @@ header > h1 {
 
 #titleIntro {
   letter-spacing: 2px;
-  font-size: 3.5em;
+  font-size: 3em;
   margin-bottom: 0.5em;
 }
 
@@ -124,7 +127,7 @@ article {
 }
 
 #foundationalTitle {
-  font-size: 75px;
+  font-size: 4em;
 }
 
 aside h2 {
