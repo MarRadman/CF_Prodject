@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: 200%;
+  background-image: linear-gradient(
+    75deg,
+    rgb(0, 0, 0) 0%,
+    rgb(75, 69, 158) 25%,
+    rgb(134, 58, 58) 50%,
+    rgb(44, 43, 100) 75%,
+    rgb(35, 29, 54) 100%
+  );
+  -ms-overflow-style: none; /*Hide scrollbar W3School*/
+  scrollbar-width: none; /*Hide scrollbar W3School*/
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none; /*Hide scrollbar W3School*/
+}
+
+/* Put the navMenu in the right spot on the screen */
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 1%;
+}
+
+/* Icons: Home,about,contact */
+.navMenu a {
+  display: flex;
+  justify-content: center;
+  color: bisque;
+  text-decoration: none;
+  font-size: 150%;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+}
+
+/* Zoom animation for the Icons in navMenu */
+.navMenu a:hover {
+  color: hsl(59, 60%, 37%);
+  transition: 0.8s;
+  transform: scale(1.1);
+}
+
+main,
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set the text in the middle and give it its font + color */
+header h1,
+article h2,
+.gif-title,
+.navMenu,
+#foundationalTitle,
+#headParagraf {
+  text-align: center;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: rgb(250, 250, 250, 0.9);
+}
+
+h1,
+h2,
+p {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  color: rgb(250, 250, 250, 0.9);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+header > h1 {
+  font-size: 4em;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+#headTitle {
+  font-size: 31px;
+  justify-content: center;
+  align-items: center;
+}
+
+#headParagraf {
+  width: 100%;
+}
+
+#introImage {
+  max-width: 90%;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5%;
+}
+
+#titleIntro {
+  letter-spacing: 2px;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.article_p {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.3em;
+}
+
+#foundationalTitle {
+  font-size: 4em;
+}
+
+aside h2 {
+  display: flex;
+  justify-content: center;
+}
+
+article h2 p {
+  padding-bottom: 20px;
+}
+
+.gif-section aside {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gif-title {
+  letter-spacing: 2px;
+  font-size: auto;
+}
+
+.gif-photo {
+  border: solid black 2px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
+  height: 10vmax;
+  width: 20vmax;
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+#footerSpacing {
+  padding-right: 3px;
+}
+
+/* For phone users */
+@media only screen and (max-width: 360px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header > h1,
+  #titleIntro,
+  #foundationalTitle {
+    font-size: 2em;
+  }
+
+  #headParagraf {
+    font-size: 70%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navMenu {
+    font-size: 90%;
+  }
+
+  #introImage {
+    width: 90%;
+  }
+
+  .article_p {
+    font-size: 15px;
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .gif-section aside {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gif-photo {
+    border: solid black 2px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
+  }
+}
+
+/* For desktop users */
+@media only screen and (min-width: 768px) {
+  .navMenu {
+    font-size: 1.5em;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gif-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+    gap: 20px;
+  }
+
+  .gif-section aside {
+    text-align: center;
+  }
+
+  .gif-photo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .article_p {
+    text-align: justify;
+  }
+}
