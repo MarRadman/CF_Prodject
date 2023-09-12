@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-size: 100%;
+  background-size: 200%;
   background-image: linear-gradient(
     75deg,
     rgb(0, 0, 0) 0%,
@@ -108,6 +108,7 @@ header > h1 {
 #introImage {
   max-width: 90%;
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5%;
 }
 
 #titleIntro {
@@ -159,6 +160,7 @@ article h2 p {
 
 .gif-photo {
   border: solid black 2px;
+  border-radius: 3%;
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
   height: 10vmax;
   width: 20vmax;
@@ -179,8 +181,6 @@ footer {
 /* For phone users */
 @media only screen and (max-width: 360px) {
   body {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,8 +215,6 @@ footer {
   .article_p {
     font-size: 15px;
     width: 90%;
-    margin: 0;
-    padding: 0;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -235,11 +233,6 @@ footer {
 
 /* For desktop users */
 @media only screen and (min-width: 768px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
   .navMenu {
     font-size: 1.5em;
   }
