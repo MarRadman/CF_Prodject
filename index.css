@@ -157,7 +157,7 @@ article h2 p {
 
 .gif-section {
   display: grid;
-  grid-template-rows: repeat(1, fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -264,10 +264,6 @@ footer {
 
   .article_p {
     text-align: justify;
-  }
-}
-Three columns per row */
-    gap: 5px;
   }
 
   .gif-section {
