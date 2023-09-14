@@ -3,8 +3,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-size: cover;
   background-image: linear-gradient(
     75deg,
@@ -68,7 +66,7 @@ article h2,
 .navMenu,
 #foundationalTitle,
 #headParagraf {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
   font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   color: rgb(250, 250, 250, 0.9);
@@ -135,6 +133,7 @@ article {
   text-align: center;
   line-height: 1.6;
   font-size: 1.3em;
+  padding-bottom: 20px;
 }
 
 #foundationalAside {
@@ -149,10 +148,6 @@ article {
 aside h2 {
   display: flex;
   justify-content: center;
-}
-
-article h2 p {
-  padding-bottom: 20px;
 }
 
 .gif-section {
