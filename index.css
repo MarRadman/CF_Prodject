@@ -126,7 +126,7 @@ article {
 }
 
 .article_p {
-  width: 50%;
+  width: 75%;
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -145,11 +145,7 @@ article {
   font-size: 4em;
 }
 
-aside h2 {
-  display: flex;
-  justify-content: center;
-}
-
+/* Section with gifs and footer */
 .gif-section {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
@@ -162,7 +158,7 @@ aside h2 {
 
 .gif-title {
   letter-spacing: 2px;
-  margin: 5% 5% 2% 5%;
+  margin-bottom: 2%;
   font-size: auto;
 }
 
@@ -245,12 +241,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns per row */
     gap: 5px;
-  }
-
-  .gif-section {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+
+  .gif-title {
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+    font-size: 1.5em;
   }
 
   .gif-photo {
@@ -260,16 +259,5 @@ footer {
 
   .article_p {
     text-align: justify;
-  }
-
-  .gif-section {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .gif-photo {
-    width: 25vmax;
-    height: 15vmax;
   }
 }
