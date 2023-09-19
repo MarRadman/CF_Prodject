@@ -96,14 +96,6 @@ main h2 {
 #contactTitle {
   font-size: 10em;
   text-align: center;
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
-  color: rgb(250, 250, 250, 0.9);
-}
-
-aside {
-  margin-top: 15px;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
@@ -120,12 +112,6 @@ footer :hover {
 }
 
 @media only screen and (max-width: 600px) {
-  aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   #contactTitle {
     font-size: 6em;
   }
