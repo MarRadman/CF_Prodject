@@ -70,7 +70,6 @@ main h2 {
 }
 
 header {
-  margin-top: 10px;
   font-size: 10px;
   display: flex;
   flex-direction: column;
