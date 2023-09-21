@@ -1,12 +1,8 @@
 @import "index.css";
 body {
-  padding: 0;
-  margin: 0;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -112,6 +108,9 @@ footer :hover {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    height: 100vmax;
+  }
   #contactTitle {
     font-size: 6em;
   }

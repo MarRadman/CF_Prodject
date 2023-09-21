@@ -4,7 +4,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-size: cover;
   background-image: linear-gradient(
     75deg,
     rgb(0, 0, 0) 0%,
@@ -13,6 +12,7 @@ body {
     rgb(44, 43, 100) 75%,
     rgb(35, 29, 54) 100%
   );
+  background-size: 200%;
   -ms-overflow-style: none; /*Hide scrollbar W3School*/
   scrollbar-width: none; /*Hide scrollbar W3School*/
   overflow-x: hidden;
