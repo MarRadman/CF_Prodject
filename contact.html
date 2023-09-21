@@ -18,38 +18,56 @@
       <!--_blank to get a new tab-->
     </nav>
 
+    <!-- Jag vet att jag skulle olika storlekar på samma bild.
+    Men jag lekte med tanken att det byter ut bilden vid olika bred.
+
+    Mvh Martin-->
     <header>
       <h1 id="contactTitle">WEBSITE CREATOR</h1>
-      <picture class="image-fader">
-        <img src="Bilder/boxJump.jpg" alt="Boxjump" />
-        <img src="Bilder/echoBike.jpg" alt="Echobike"/>
-        <img src="Bilder/contactProfil.jpg" alt="Profilphoto" />
+      <picture>
+        <source srcset="Bilder/contactProfil.jpg" media="(min-width: 1200px)" />
+        <source srcset="Bilder/boxJump.jpg" media="(min-width: 1000px)" />
+        <source srcset="Bilder/echoBike.jpg" media="(min-width: 768px)" />
+        <img id="images" src="Bilder/contactProfil.jpg" alt="Profilphotos" />
       </picture>
     </header>
 
     <main>
-        <h2 id="">What made me start Crossfit?</h2>
-        <p class="contact_p">
-          In the summer of 2019, I was tired of doing the same things at the gym every week.
-          I'd heard about <strong>Crossfit</strong> for a while but never tried it.
-          I decided to give it a go for a change, and from that day on, I loved it!</p>
-        <p class="contact_p">
-            You can follow my journey from where I started, and where I am today on <b>instagram</b>.
-        </p>
+      <h2>What made me start Crossfit?</h2>
+      <p class="contact_p">
+        In the summer of 2019, I was tired of doing the same things at the gym
+        every week. I'd heard about <strong>Crossfit</strong> for a while but
+        never tried it. I decided to give it a go for a change, and from that
+        day on, I loved it!
+      </p>
+      <p class="contact_p">
+        You can follow my journey from where I started, and where I am today on
+        <a href="https://www.instagram.com/marradman/"><b>Instagram</b></a
+        >.
+      </p>
     </main>
 
     <footer>
-      <dl>
-        <a href="https://www.linkedin.com/in/martin-r%C3%A5dmans-9a5367114/" target="_blank"
-          ><img class="icons" src="Bilder/linkedin.png" alt="Linkedin"
-        /></a>
-      </dl>
-      <dl>
-        <a href="https://www.instagram.com/marradman/" target="_blank"><img class="icons" src="Bilder/instagram.png" alt="Instagram" /></a>
-      </dl>
-      <dl>
-        <a href="mailto:martinio@hotmail.se"><img class="icons" src="Bilder/gmail.png" alt="Email" /></dl></a>
-    </dl>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/martin-r%C3%A5dmans-9a5367114/"
+            target="_blank"
+          >
+            <img class="icons" src="Bilder/linkedin.png" alt="Linkedin" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/marradman/" target="_blank">
+            <img class="icons" src="Bilder/instagram.png" alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:martinio@hotmail.se">
+            <img class="icons" src="Bilder/gmail.png" alt="Email" />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
