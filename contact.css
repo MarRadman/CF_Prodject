@@ -1,8 +1,14 @@
 @import "index.css";
+
+html {
+  height: 100%;
+}
+
 body {
   /* justify-content: center; */
   align-items: center;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 main {
